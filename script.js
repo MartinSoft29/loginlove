@@ -8,7 +8,7 @@ if (document.body.classList.contains("login")) {
     const pass = document.getElementById("pass").value;
     const error = document.getElementById("error");
 
-    if (user === "novia" && pass === "sanvalentin") {
+    if (user === "YayaAmorcito" && pass === "muñeca123") {
       window.location.href = "card.html";
     } else {
       error.textContent = "Usuario o contraseña incorrectos 💔";
