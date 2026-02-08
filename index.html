@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login San Valentín</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body class="login">
+
+  <div class="login-box glass">
+    <h1>Hola amorcito, inicia sesión</h1>
+    <h2>La contraseña es muy facil, te doy una pista?</h2>
+
+    <!-- ⚠️ QUITAMOS form y POST -->
+    <input type="text" id="user" placeholder="yayaamorcito" required>
+    <input type="password" id="pass" placeholder="Yayabautista" required>
+
+    <button class="btn-primary" onclick="login()">Log in</button>
+
+    <p id="error"></p>
+  </div>
+  <div class="buttons" id="buttons">
+  <button onclick="sayYes()" class="btn-primary">Sí 💕</button>
+  <button id="noBtn" class="btn-secondary">No 😢</button>
+    </div>
+
+<!-- FOTO (oculta al inicio) -->
+    <div class="photo-container" id="photoContainer">
+        <img src="foto.jpeg" alt="Nosotros 💖">
+    </div>
+
+
+</body>
+</html>
